@@ -1,0 +1,20 @@
+[package]
+name = "gotdbot"
+version = "0.1.0"
+edition = "2021"
+description = "Rust wrapper for Telegram TDLib (port of the Go library gotdbot): dynamic libtdjson loading, handlers, filters, conversations and helpers. Zero dependencies."
+license = "MIT"
+readme = "README.md"
+keywords = ["telegram", "tdlib", "bot", "mtproto", "userbot"]
+categories = ["api-bindings"]
+
+[dependencies]
+# Intentionally empty: JSON, SHA-256/HMAC, base64 and the dlopen binding are built in.
+
+[[example]]
+name = "echo_bot"
+path = "examples/echo_bot.rs"
+
+[[example]]
+name = "conversation"
+path = "examples/conversation.rs"
